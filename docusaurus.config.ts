@@ -6,7 +6,12 @@ const config: Config = {
   title: "RSVIM",
   tagline: "The VIM editor reinvented in Rust+TypeScript.",
   favicon:
-    "https://raw.githubusercontent.com/mivsr/assets/main/logo/RSVIM-logo-square.png",
+    "img/RSVIM-logo-square.png",
+
+  future: {
+    v4: true,
+    faster: true,
+  },
 
   // Set the production url of your site here
   url: "https://mivsr.github.io/",
@@ -80,8 +85,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image:
-      "https://raw.githubusercontent.com/mivsr/assets/main/logo/RSVIM-logo-square.png",
+    image: "img/RSVIM-logo-square.png",
     tableOfContents: {
       minHeadingLevel: 2,
       maxHeadingLevel: 6,
@@ -237,12 +241,6 @@ const config: Config = {
       // console.log(result);
       return result;
     },
-  },
-  future: {
-    v4: {
-      removeLegacyPostBuildHeadAttribute: true,
-    },
-    faster: true,
   },
 };
 
